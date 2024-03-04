@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Input Chatbot</title>
+    <!-- Include any necessary CSS files -->
+</head>
+<body>
+    <!-- Chatbot interface -->
+    <div class="chatbox">
+        <div class="messages"></div>
+        <div class="input-area">
+            <input type="text" id="user_input" placeholder="Type here...">
+            <button id="voice_button">Voice Input</button>
+            <button id="send_button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const voiceButton = document.getElementById('voice_button');
+            const userInput = document.getElementById('user_input');
+            const sendButton = document.getElementById('send_button');
+
+            voiceButton.addEventListener('click', function () {
+                // Record audio using browser's built-in microphone
+                navigator.mediaDevices.getUserMedia({ audio: true })
+                    .then(function (stream) {
+                        const mediaRecorder = new MediaRecorder(stream);
+                        let audioChunks = [];
+
+                        mediaRecorder.addEventListener('dataavailable', function (event) {
+                            if (event.data.size > 0) {
+                                audioChunks.push(event.data);
+                            }
+                        });
+
+                        mediaRecorder.addEventListener('stop', function () {
+                            const audioBlob = new Blob(audioChunks);
+                            const formData = new FormData();
+                            formData.append('audio_data', audioBlob);
+
+                            fetch('/voice_input', {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.success) {
+                                    // Process the recognized text, e.g., display it in the chatbox
+                                    userInput.value = data.message;
+                                } else {
+                                    console.error(data.error);
+                                    alert('Error: Voice input could not be processed.');
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                alert('Error: Voice input request failed.');
+                            });
+                        });
+
+                        mediaRecorder.start();
+                        setTimeout(function () {
+                            mediaRecorder.stop();
+                        }, 3000); // Record for 3 seconds
+                    })
+                    .catch(function (error) {
+                        console.error('Error:', error);
+                        alert('Error: Could not access microphone.');
+                    });
+            });
+
+            // Add event listener for sending text messages
+            sendButton.addEventListener('click', function () {
+                // Handle sending text messages
+            });
+        });
+    </script>
+</body>
+</html>

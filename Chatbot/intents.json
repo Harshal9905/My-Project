@@ -1,0 +1,254 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey, how can I assist you today?",
+          "Hello! How can I help you?",
+          "Hi there! What can I do for you?",
+          "Good day! How can I assist you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later! Take care!",
+          "Bye! Come back soon!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "Thank's a lot!"
+        ],
+        "responses": [
+          "You're welcome! If you have any more questions, feel free to ask.",
+          "No problem! Let me know if there's anything else I can help with.",
+          "My pleasure! Don't hesitate to reach out if you need assistance."
+        ]
+      },
+      {
+        "tag": "courses",
+        "patterns": [
+          "Which courses do you offer?",
+          "What courses are available?",
+          "Tell me about the courses"
+        ],
+        "responses": [
+          "We offer a variety of courses including Computer Science, Engineering, Business, and more. Would you like more information on a specific course?"
+        ]
+      },
+      {
+        "tag": "admissions",
+        "patterns": [
+          "How can I apply?",
+          "What are the admission requirements?",
+          "Can you tell me about the admission process?"
+        ],
+        "responses": [
+          "To apply, you can visit our admissions website or contact the admissions office for more information. Admission requirements vary depending on the program and level of study."
+        ]
+      },
+      {
+        "tag": "facilities",
+        "patterns": [
+          "What facilities does the campus have?",
+          "Tell me about the campus facilities",
+          "Are there any amenities available on campus?"
+        ],
+        "responses": [
+          "Our campus offers a range of facilities including libraries, laboratories, sports facilities, and student centers. You can explore more about our facilities on our website or by visiting the campus."
+        ]
+      },
+      {
+        "tag": "faculty",
+        "patterns": [
+          "Can you provide information about the faculty members?",
+          "Tell me about the faculty",
+          "Who are the professors at the college?"
+        ],
+        "responses": [
+          "Our college has a highly qualified and experienced faculty. Information about faculty members, their qualifications, and areas of expertise can be found on the college website."
+        ]
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where is the college located?",
+          "What is the address of the college?",
+          "Can you provide directions to the college?"
+        ],
+        "responses": [
+          "Karmaveer Bhaurao Patil College Of Engineering Satara is located at Near RTO Office , Sadar Bazar Satara. You can find detailed directions on our website."
+        ]
+      },
+      {
+        "tag": "student_life",
+        "patterns": [
+          "What is student life like at the college?",
+          "Tell me about extracurricular activities",
+          "Are there any clubs or organizations on campus?"
+        ],
+        "responses": [
+          "Our college offers a vibrant student life with numerous clubs, organizations, and extracurricular activities. Students can participate in various events, sports, cultural activities, and more."
+        ]
+      },
+      {
+        "tag": "fees",
+        "patterns": [
+          "What are the tuition fees for the courses?",
+          "Can you provide information about course fees?",
+          "How much does it cost to study at the college?"
+        ],
+        "responses": [
+          "Tuition fees vary depending on the program and course of study. You can find detailed information about course fees on the college website or by contacting the admissions office."
+        ]
+      },
+      {
+        "tag": "scholarships",
+        "patterns": [
+          "Are scholarships available for students?",
+          "Can you tell me about financial aid?",
+          "How can I apply for scholarships?"
+        ],
+        "responses": [
+          "Yes, our college offers scholarships and financial aid opportunities for eligible students. Information about scholarships, grants, and financial assistance programs can be found on the college website or by contacting the financial aid office."
+        ]
+      },
+      {
+          "tag": "greeting",
+          "patterns": [
+            "Hi",
+            "Hey",
+            "Hello",
+            "Good day",
+            "hii",
+            "hiiiiiii"
+          ],
+          "responses": [
+            "Hey, how can I assist you today?",
+            "Hello! How can I help you?",
+            "Hi there! What can I do for you?",
+            "Good day! How can I assist you?"
+          ]
+        },
+        {
+          "tag": "faculty_info",
+          "patterns": [
+            "Can you provide information about the faculty at the college?",
+            "college faculty",
+            "give info of hod",
+            "tell me something about ganesh dangat",
+            "who is ganesh dangat"
+          ],
+          "responses": [
+            "Our college is proud to have a highly qualified and experienced faculty. Information about faculty members, their qualifications, and areas of expertise can be found on the college website."
+          ]
+        },
+        {
+          "tag": "placements",
+          "patterns": [
+            "what about placements?"
+          ],
+          "responses": [
+            "Our college provides good placement support."
+          ]
+        },
+        {
+          "tag": "principal",
+          "patterns": [
+            "principle name"
+          ],
+          "responses": [
+            "dr.A.c.Attar"
+          ]
+        },
+        {
+          "tag": "hod_cs",
+          "patterns": [
+            "who is HOD of cs department?",
+            "hod of computer science",
+            "hod of cs?"
+          ],
+          "responses": [
+            "The current Head of the Computer Science Department is Prof. Ganesh Dangat."
+          ]
+        },
+        {
+          "tag": "weather",
+          "patterns": [
+            "What's the weather like today?",
+            "How's the weather today?",
+            "Tell me about today's weather.",
+            "Can you give me the weather forecast?"
+          ],
+          "responses": [
+            "I'm sorry, I don't have weather information."
+          ]
+        },
+        {
+          "tag": "admissions",
+          "patterns": [
+            "What are the admission requirements?",
+            "What are the requirements for admission?",
+            "Can you tell me about admission prerequisites?",
+            "How can I get admission?",
+            "What is the process for admission?",
+            "Tell me about the admission process.",
+            "Are there any requirements for getting into the college?",
+            "How do I qualify for admission?",
+            "Give me information about getting admitted."
+          ],
+          "responses": [
+            "The admission requirements include..."
+          ]
+        },
+        {
+          "tag": "majors",
+          "patterns": [
+            "What majors does this college offer?"
+          ],
+          "responses": [
+            "This college offers a variety of majors, including Computer Science, Business Administration, and Psychology."
+          ]
+        },
+        {
+          "tag": "scholarships",
+          "patterns": [
+            "Are there any scholarships available?",
+            "college present any scholarship?",
+            "scholarship present in college or not"
+          ],
+          "responses": [
+            "Yes, there are scholarships available based on academic merit, financial need, and extracurricular achievements."
+          ]
+        },
+        {
+          "tag": "hod_info",
+          "patterns": [
+            "Tell me about hod's background and qualifications.",
+            "Can you provide contact information of HOD"
+          ],
+          "responses": [
+            "Prof. Ganesh Dangat holds a B.Tech degree with expertise in Computer Science. He has been a valuable member of the department for more than 10 years."
+          ]
+
+      }
+      ]
+      }
+
+
